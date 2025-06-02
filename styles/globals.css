@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+ 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-satoshi: 'Satoshi', sans-serif;
+}
+
+body {
+  font-family: var(--font-satoshi);
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+.ft-list li{
+  border-bottom: 1px solid #e9e5e5;
+  padding: 16px 0;
+}
+.ft-list li a{
+  font-size: 20px;
+}
+
+/* Add this if you're using Tailwind + custom class setup */
+.dis-btm .slick-slide {
+  opacity: 0.3;
+transition:  0.4s ease-in-out;
+}
+.dis-btm  .slick-slide.slick-active.slick-current{
+  opacity: 1;
+   transition:  0.4s ease-in-out;
+    border-left:  1px solid #fff;
+     padding-left: 0px;
+}
+.dis-btm  .slick-slide.slick-active {
+ opacity: 0.3;
+ transition:  0.4s ease-in-out;
+ border-left:  1px solid #b1b1b1;
+ padding-left: 20px;
+}
+.dis-btm .slick-slide > div {
+  margin-right: 40px;
+}
+
+.lat-slider .slick-center .slick-slide-card {
+  transform: scale(1.2) !important;
+  z-index: 10;
+  margin: 40px 0;
+}
+.lat-slider .slick-slide-card {
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
