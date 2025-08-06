@@ -109,9 +109,8 @@ export default function FooterWrap() {
           <div className="ft-btm xl:flex  xl:divide-x  divide-gray-200  justify-between px-28  items-end">
             <div className="ft-left w-full   pt-20 pb-10 pr-24 space-y-20">
               <p className="text-[26px] max-w-lg">
-                Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua ipsum dolor sit
-                consectetur amet.
+                the4loop blends art and strategy to create immersive visuals
+                that connect, engage, and make brands impossible to ignore.
               </p>
               <div className="relative h-[300px]  ">
                 <img
