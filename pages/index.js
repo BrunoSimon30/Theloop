@@ -21,14 +21,14 @@ export default function Home() {
     <>
       <Header />
       <MainBanner onOpenModal={() => setOpenModal(true)} />
-      <FeaturedIn />
+      <FeaturedIn onOpenModal={() => setOpenModal(true)} />
    
-      <Scrollsec />
-      <Operation />
-      <ObviousChoice />
-      <CustomersReviews />
+      <Scrollsec onOpenModal={() => setOpenModal(true)}  />
+      <Operation  onOpenModal={() => setOpenModal(true)}  />
+      <ObviousChoice  onOpenModal={() => setOpenModal(true)}  />
+      <CustomersReviews  />
       <BlogNews />
-        <FooterWrap/>
+        <FooterWrap  onOpenModal={() => setOpenModal(true)} />
          <PopupModal isOpen={openModal} onClose={() => setOpenModal(false)} />
     </>
   );

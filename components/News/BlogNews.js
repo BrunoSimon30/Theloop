@@ -59,39 +59,122 @@ export default function BlogNews() {
             </div>
             <div>
               <p className="text-3xl max-w-3xl text-white">
-                Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua ipsum dolor sit
-                consectetur amet.
+                Stay inspired with fresh insights, bold ideas, and design trends
+                shaping the creative world. From breakthrough innovations to
+                behind-the-scenes stories.
               </p>
             </div>
           </div>
         </div>
         <Slider {...settingss} className="lat-slider">
-          {[1, 2, 3, 4, 5].map((item, index) => (
-            <div
-              key={index}
-              className="px-6 transition-all duration-300 transform"
-            >
-              <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
-                <div>
-                  <img className="rounded-xl" src="/img/lat1.png" />
-                </div>
-                <div className="space-y-6">
-                  <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
-                    Brand Guidelines
-                  </span>
-                  <h4 className="text-4xl text-white font-medium">
-                    Semper placerat cursus congue leo, egestas aptent pretium
-                    eros.
-                  </h4>
-                  <p className="text-xl text-gray-300">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi...
-                  </p>
-                </div>
+          <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/lat1.png" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                  Designing for Emotion: Why Feelings Drive Clicks
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Discover how emotional design influences user decisions, builds connection, and turns visitors into loyal customers.
+                </p>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/t6.jpeg" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                 The Power of Simplicity in UI Design
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Minimalist interfaces aren’t just trendy — they improve clarity, boost performance, and create seamless user journeys.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/t3.jpeg" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                 From Idea to Interface: The MVP Design Mindset
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Learn how to design lean, launch fast, and validate your product vision without overcomplicating the first release.
+                </p>
+              </div>
+            </div>
+          </div>
+           <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/lat1.png" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                  Designing for Emotion: Why Feelings Drive Clicks
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Discover how emotional design influences user decisions, builds connection, and turns visitors into loyal customers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/t6.jpeg" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                 The Power of Simplicity in UI Design
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Minimalist interfaces aren’t just trendy — they improve clarity, boost performance, and create seamless user journeys.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="px-6 transition-all duration-300 transform">
+            <div className="lat-card bg-black p-5 rounded-xl space-y-6 scale-90 slick-slide-card">
+              <div>
+                <img className="rounded-xl" src="/img/t3.jpeg" />
+              </div>
+              <div className="space-y-6">
+                <span className="text-white border-2 border-red-600 px-8 py-2 block w-fit text-md rounded-full">
+                  Brand Guidelines
+                </span>
+                <h4 className="text-4xl text-white font-medium">
+                 From Idea to Interface: The MVP Design Mindset
+                </h4>
+                <p className="text-xl text-gray-300">
+                 Learn how to design lean, launch fast, and validate your product vision without overcomplicating the first release.
+                </p>
+              </div>
+            </div>
+          </div>
         </Slider>
       </div>
     </section>

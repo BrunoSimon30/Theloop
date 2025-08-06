@@ -12,38 +12,38 @@ export default function PopupModal({ isOpen, onClose }) {
       }`}
     >
       <div
-        className={`bg-white rounded-2xl w-[90%] max-w-lg p-6 relative transform transition-all duration-300 ${
+        className={`bg-white rounded-2xl w-[90%] max-w-lg px-6 py-8 relative transform transition-all duration-300 ${
           isOpen ? "scale-100 opacity-100" : "scale-90 opacity-0"
         }`}
       >
         {/* Close Button */}
         <button
-          className="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl"
+          className="absolute top-3 right-3 text-white hover:text-black text-2xl bg-[#C7151A] px-2"
           onClick={onClose}
         >
           ×
         </button>
 
-        <h2 className="text-2xl font-bold mb-4 text-center">Start Your Project</h2>
+        <h2 className="text-3xl font-bold mb-4 "><span className="text-[#C7151A]">Hey!</span> Let's Connect!</h2>
 
         <form className="space-y-4">
           <input
             type="text"
             placeholder="Name"
-            className="w-full border rounded-lg p-3"
+            className="w-full border border-gray-300 rounded-lg p-3"
           />
           <input
             type="email"
             placeholder="Email"
-            className="w-full border rounded-lg p-3"
+            className="w-full border border-gray-300 rounded-lg p-3"
           />
           <input
             type="tel"
             placeholder="Phone"
-            className="w-full border rounded-lg p-3"
+            className="w-full border border-gray-300 rounded-lg p-3"
           />
 
-          <select className="w-full border rounded-lg p-3">
+          <select className="w-full border border-gray-300 rounded-lg p-3">
             <option>Select Service</option>
             <option>Web Design</option>
             <option>Branding</option>
@@ -54,12 +54,12 @@ export default function PopupModal({ isOpen, onClose }) {
           <textarea
             placeholder="Message"
             rows="4"
-            className="w-full border rounded-lg p-3"
+            className="w-full border border-gray-300 rounded-lg p-3"
           ></textarea>
 
           <button
             type="submit"
-            className="w-full bg-black text-white py-3 rounded-lg hover:bg-red-700 transition"
+            className="w-full bg-[#C7151A] text-white py-3 rounded-lg hover:bg-black transition"
           >
             Submit
           </button>

@@ -3,16 +3,16 @@ import Slider from "react-slick";
 import { MdArrowOutward, MdArrowBack, MdArrowForward } from "react-icons/md";
 import Link from "next/link";
 
-export default function FeaturedIn() {
+export default function FeaturedIn({ onOpenModal }) {
   const facts = [
-    { number: "25+", text: "Tempor incididun sed labore et dolore magna." },
+    { number: "25+", text: "Client Satisfaction Rate across all our design and development projects, ensuring long-term partnerships and trust." },
     {
       number: "50+",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation.",
+      text: "Projects successfully delivered across industries with a focus on design excellence and user satisfaction.",
     },
     {
       number: "100+",
-      text: "Duis aute irure dolor in reprehenderit in voluptate.",
+      text: "Brands transformed through strategic UI/UX and digital solutions tailored to meet real business goals.",
     },
   ];
 
@@ -44,13 +44,14 @@ export default function FeaturedIn() {
                 Featured In
               </h2>
             </div>
-            <div className="xl:col-span-3 flex justify-between items-center gap-2  ">
+            <div className="xl:col-span-3 flex justify-between items-center gap-4  ">
               {["f1", "f2", "f3", "f4", "f5"].map((img, index) => (
                 <div
                   key={index}
-                  className="bg-[#FFF9F5] border-2 border-[#ffebdc] py-5 xl:px-7 px-2 rounded-lg"
+                  className="bg-[#C7151A] border-2 border-[#ffebdc] py-5 xl:px-4 px-2 rounded-lg min-h-[90px] flex items-center justify-center"
                 >
                   <img src={`/img/${img}.png`} alt={`Featured ${index + 1}`} />
+                
                 </div>
               ))}
             </div>
@@ -79,14 +80,10 @@ export default function FeaturedIn() {
             <div></div>
             <div className="space-y-6">
               <p className="text-3xl   leading-10 pl-4">
-                Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua ipsum dolor sit
-                consectetur amet.
+               Crafting a memorable digital experience takes more than just good visuals — it requires strategic thinking, user insight, and design expertise.
               </p>
               <p className="text-3xl  leading-10 pl-4">
-                Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua ipsum dolor sit
-                consectetur amet.
+               We help startups and businesses turn ideas into impactful, user-friendly interfaces that not only look great but work flawlessly.
               </p>
             </div>
           </div>
@@ -137,15 +134,16 @@ export default function FeaturedIn() {
             </div>
             <div className="w-full"></div>
             <div className="">
-              <Link
+              <button
                 href={""}
                 className="w-fit relative flex text-xl font-medium bg-white px-16 py-4 rounded-full"
+                   onClick={onOpenModal} 
               >
                 Let's Explore
                 <span className="arow bg-white  text-2xl w-13 h-13 absolute -right-13 top-0 bottom-0 m-auto flex items-center justify-center rounded-full">
                   <MdArrowOutward />
                 </span>
-              </Link>
+              </button>
             </div>
           </div>
         </div>

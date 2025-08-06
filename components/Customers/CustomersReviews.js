@@ -5,17 +5,25 @@ import Slider from "react-slick";
 const testimonials = [
   {
     quote:
-      "I have worked with website developers in the past, and this was by far the BEST experience I have had. Communication was very easy.",
-    name: "Katrin L.",
+      "I'm extremely intrigued by their nature of work. It is simply outwardly dazzling. We recruited The4Loop to design & develop our website. I'm exceptionally fulfilled working with them.",
+    name: "Shoaib Ali",
     title: "Founder, Elemotion",
     img: "/img/d1.png",
     logo: "/img/d2.png",
   },
   {
     quote:
-      "Their team was proactive and truly understood our vision. We are beyond happy with the results!",
+      "I hired The 4Loop for my travel based blog. The job included website design and development. The 4loop team amazed me with an outstanding design which was approved and now running smoothly. I still comeback for their support. Their professionalism and time management are per excellence.",
     name: "Matrin L.",
     title: "Founder, Gelpsy",
+    img: "/img/d1.png",
+    logo: "/img/d2.png",
+  },
+  {
+    quote:
+      "Hi, this is Ahsan, the Team Lead of Inspiratus Consulting. Working with The4Loop has been one of the best decisions for my company. I must say they exactly know what they are doing and provide efficient and effective services",
+    name: "bruno Simon.",
+    title: "ceo, letsbuy",
     img: "/img/d1.png",
     logo: "/img/d2.png",
   },
@@ -66,8 +74,9 @@ export default function CustomersReviews() {
 
                 <span>have to say </span>
                 <a
-                  href="#"
+                  href="https://www.trustpilot.com/review/the4loop.com"
                   className="w-fit relative inline-flex text-xl font-medium bg-[#FEECDD] px-16 py-4 rounded-full"
+                  target="_blank"
                 >
                   Let's Explore
                   <span className="arow bg-[#FEECDD] text-2xl w-13 h-13 absolute -right-13 top-0 bottom-0 m-auto flex items-center justify-center rounded-full">
@@ -98,13 +107,13 @@ export default function CustomersReviews() {
                   "{item.quote}"
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="flex gap-4 -space-x-6">
+                  {/* <div className="flex gap-4 -space-x-6">
                     <img className="rounded-xl w-16 h-16" src={item.img} />
                     <img className="rounded-xl w-16 h-16" src={item.logo} />
-                  </div>
+                  </div> */}
                   <div>
                     <h4 className="text-xl font-semibold">{item.name}</h4>
-                    <p className="text-md font-medium">{item.title}</p>
+                    {/* <p className="text-md font-medium">{item.title}</p> */}
                   </div>
                 </div>
               </div>

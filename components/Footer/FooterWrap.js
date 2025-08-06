@@ -3,7 +3,7 @@ import { MdArrowOutward, MdArrowBack, MdArrowForward } from "react-icons/md";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 
-export default function FooterWrap() {
+export default function FooterWrap({ onOpenModal }) {
   return (
     <div>
       <section className="relative  px-12   -mt-64 z-10">
@@ -40,15 +40,15 @@ export default function FooterWrap() {
                 reinvention or creation of their brand.
               </p>
               <div className="pr-24">
-                <Link
-                  href={""}
+                <button
+                  onClick={onOpenModal}
                   className="w-fit relative flex text-xl font-medium bg-white px-16 py-4 rounded-full"
                 >
                   Let's Explore
                   <span className="arow bg-white  text-2xl w-13 h-13 absolute -right-13 top-0 bottom-0 m-auto flex items-center justify-center rounded-full">
                     <MdArrowOutward />
                   </span>
-                </Link>
+                </button>
               </div>
             </div>
           </div>

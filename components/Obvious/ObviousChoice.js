@@ -3,7 +3,7 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Marquee from "react-fast-marquee";
 
-export default function ObviousChoice() {
+export default function ObviousChoice({ onOpenModal }) {
   return (
     <section className="make-sec bg-white">
       <div className="container mx-auto max-w-screen">
@@ -29,19 +29,20 @@ export default function ObviousChoice() {
             </div>
             <div className="flex flex-col justify-center items-center space-y-12">
               <p className="text-xl   leading-10 pl-4 max-w-sm">
-                We work with businesses to help them in the evolution
-                reinvention or creation of their brand.
+                We craft brands that stand out with clarity and purpose. From
+                strategy to visuals, we help you create a distinct identity that
+                resonates with your audience 
               </p>
               <div className="pr-24">
-                <Link
-                  href={""}
+                <button
+                 onClick={onOpenModal}
                   className="w-fit relative flex text-xl font-medium bg-[#FEECDD] px-16 py-4 rounded-full"
                 >
                   Let's Explore
                   <span className="arow bg-[#FEECDD]  text-2xl w-13 h-13 absolute -right-13 top-0 bottom-0 m-auto flex items-center justify-center rounded-full">
                     <MdArrowOutward />
                   </span>
-                </Link>
+                </button>
               </div>
             </div>
           </div>
