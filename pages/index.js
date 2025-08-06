@@ -11,21 +11,25 @@ import BlogNews from "@/components/News/BlogNews";
  
 import VideoSec from "@/components/VideoSec";
 import FooterWrap from "@/components/Footer/FooterWrap";
+import PopupModal from "@/components/PopupModal";
+import { useState } from "react";
  
 
 export default function Home() {
+   const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Header />
-      <MainBanner />
+      <MainBanner onOpenModal={() => setOpenModal(true)} />
       <FeaturedIn />
-     <VideoSec/>
+   
       <Scrollsec />
       <Operation />
       <ObviousChoice />
       <CustomersReviews />
       <BlogNews />
         <FooterWrap/>
+         <PopupModal isOpen={openModal} onClose={() => setOpenModal(false)} />
     </>
   );
 }

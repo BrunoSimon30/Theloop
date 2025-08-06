@@ -15,12 +15,12 @@ export default function Header() {
             <Link className="text-xl font-medium" href="/">
               Home
             </Link>
-            <Link className="text-xl font-medium" href="/about">
+            <Link className="text-xl font-medium" href="">
               About
             </Link>
-            <Link className="text-xl font-medium" href="/services">
+            {/* <Link className="text-xl font-medium" href="/services">
               Services
-            </Link>
+            </Link> */}
           </ul>
         </div>
 
@@ -38,7 +38,7 @@ export default function Header() {
             className="text-xl font-medium flex gap-2 items-center"
           >
             <img className="w-6 rotate-180" src="/img/tr.svg" />
-            <span>hello@thelogoName.com</span>
+            <span>Letstalk@the4loop.com</span>
           </Link>
         </div>
 
