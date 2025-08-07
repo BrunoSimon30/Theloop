@@ -119,7 +119,7 @@ export default function FooterWrap({ onOpenModal }) {
                 />
               </div>
               <p className="text-xl ">
-                © All Rights Reserved. 2024, The4Loop. Inc
+                © All Rights Reserved. 2025, The4Loop. 
               </p>
             </div>
             <div className="ft-right w-full  pt-20 pb-10 pl-32 space-y-16">

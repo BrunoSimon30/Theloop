@@ -34,7 +34,7 @@ export default function Header() {
         {/* Mail */}
         <div className="hidden md:flex mail-wrap">
           <Link
-            href="/"
+            href="mailto:letstalk@the4loop.com"
             className="text-xl font-medium flex gap-2 items-center"
           >
             <img className="w-6 rotate-180" src="/img/tr.svg" />
@@ -66,16 +66,16 @@ export default function Header() {
           <Link href="/" onClick={() => setMenuOpen(false)}>
             Home
           </Link>
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
+          <Link href="" onClick={() => setMenuOpen(false)}>
             About
           </Link>
-          <Link href="/services" onClick={() => setMenuOpen(false)}>
+          <Link href="" onClick={() => setMenuOpen(false)}>
             Services
           </Link>
-          <Link href="/" onClick={() => setMenuOpen(false)}>
+          <Link href="mailto:letstalk@the4loop.com" onClick={() => setMenuOpen(false)}>
             <div className="flex gap-2 items-center pt-6">
               <img className="w-6 rotate-180" src="/img/tr.svg" />
-              hello@thelogoName.com
+              Letstalk@the4loop.com
             </div>
           </Link>
         </nav>
